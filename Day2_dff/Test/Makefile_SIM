@@ -1,0 +1,7 @@
+TOPLEVEL_LANG = verilog
+SIM = icarus
+VERILOG_SOURCES = ../dff.v #change 
+TOPLEVEL = dff #change
+MODULE = test
+
+include $(shell cocotb-config --makefiles)/Makefile.sim

@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 14 19:18:19 2022
+# Make data base, printed on Tue Jun 14 11:04:01 2022
 
 # Variables
 
@@ -38,9 +38,8 @@ XAUTHORITY = /run/user/1000/gdm/Xauthority
 GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
- 
 # makefile
-CURDIR := /home/varun/coding/projects/-100daysofrtl
+CURDIR := /home/varun/coding/projects/-100daysofrtl/project_template
 # makefile
 SHELL = /bin/sh
 # environment
@@ -74,9 +73,9 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 MANAGERPID = 1991
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f690aa7e-cac1-4644-b2bb-44b73145486d.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-cdd222df-a11b-430d-880e-f96d71b6e640.sock
 # environment
-VSCODE_CWD = /home/varun/coding/projects/-100daysofrtl
+VSCODE_CWD = /home/varun/coding/projects/-100daysofrtl/project_template
 # environment
 GSETTINGS_SCHEMA_DIR = /snap/code/98/usr/share/glib-2.0/schemas
 # default
@@ -128,7 +127,7 @@ VSCODE_PIPE_LOGGING = true
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
-PWD = /home/varun/coding/projects/-100daysofrtl
+PWD = /home/varun/coding/projects/-100daysofrtl/project_template
 # default
 .LOADED := 
 # environment
@@ -160,7 +159,6 @@ SNAP_USER_COMMON = /home/varun/snap/code/common
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
- 
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
@@ -199,7 +197,7 @@ LESS = -R
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/varun/coding/projects/-100daysofrtl/Day1_2X1mux
+OLDPWD = /home/varun/coding/projects/-100daysofrtl
 # default
 .VARIABLES := 
 # automatic
@@ -215,6 +213,7 @@ MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # automatic
+ 
 +D = $(patsubst %/,%,$(dir $+))
 # environment
 GDK_BACKEND = x11
@@ -259,7 +258,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 33916
+VSCODE_PID = 27859
 # environment
 DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=52d9e19ebd923d4b44f8d52f62a7261b
 # variable set hash-table stats:
@@ -271,23 +270,15 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=52d9e19ebd923d4b44f8d52
 
 # Directories
 
-# . (device 66306, inode 2897622): 9 files, no impossibilities.
+# . (device 66306, inode 2897649): 7 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 7 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 # No implicit rules.
 
 # Files
-
-cleanapp:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 15):
-	$(MAKE) -C main_App clean
 
 all:
 #  Command line target.
@@ -296,7 +287,7 @@ all:
 #  File has been updated.
 #  Successfully updated.
 
-.PHONY: cleanapp cleanboot
+.PHONY: clean synth
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -304,16 +295,17 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-23 18:31:46.342376
+#  Last modified 2022-06-14 10:35:08.031571725
 #  File has been updated.
 #  Successfully updated.
 
-App:
+synth:
+#  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
-#  Modification time never checked.
+#  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 12):
-	$(MAKE) -C main_App
+#  recipe to execute (from 'Makefile', line 11):
+	$(MAKE) -C synth
 
 # Not a target:
 .DEFAULT:
@@ -321,49 +313,42 @@ App:
 #  Modification time never checked.
 #  File has not been updated.
 
-flashelf: App
+sim:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 4):
-	/opt/tools/Xilinx/Vitis/2020.2/bin/program_flash -f ./main_App/firmware/firmware.srec -offset 0x00600000 -flash_type s25fl128sxxxxxx0-spi-x1_x2_x4 -verify -cable type xilinx_tcf url TCP:127.0.0.1:3121 
+#  recipe to execute (from 'Makefile', line 5):
+	$(MAKE) -C Test -f Makefile_SIM
 
-boot:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 9):
-	$(MAKE) -C bootloader
-
-cleanboot:
+clean:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 18):
-	$(MAKE) -C bootloader clean
+#  recipe to execute (from 'Makefile', line 14):
+	$(MAKE) -C Test clean
 
-flashbit:
+gls: synth
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 7):
-	/opt/tools/Xilinx/Vitis/2020.2/bin/program_flash -f ../icap_axi_ddr/bitstreams/config2prr0nandprr1xnor/config2.bit -offset 0x00000000 -flash_type s25fl128sxxxxxx0-spi-x1_x2_x4 -verify -cable type xilinx_tcf url TCP:127.0.0.1:3121 
+#  recipe to execute (from 'Makefile', line 8):
+	$(MAKE) -C Test -f Makefile_GLS
 
 # files hash-table stats:
-# Load=11/1024=1%, Rehash=0, Collisions=0/26=0%
+# Load=9/1024=1%, Rehash=0, Collisions=0/24=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 21 / storage = 186 B / avg = 8 B
-# current buf: size = 8162 B / used = 186 B / count = 21 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 16 / storage = 128 B / avg = 8 B
+# current buf: size = 8162 B / used = 128 B / count = 16 / avg = 8 B
 
-# strcache performance: lookups = 37 / hit rate = 43%
+# strcache performance: lookups = 31 / hit rate = 48%
 # hash-table stats:
-# Load=21/8192=0%, Rehash=0, Collisions=1/37=3%
-# Finished Make data base on Tue Jun 14 19:18:19 2022
+# Load=16/8192=0%, Rehash=0, Collisions=1/31=3%
+# Finished Make data base on Tue Jun 14 11:04:01 2022
 
  
