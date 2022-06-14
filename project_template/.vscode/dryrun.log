@@ -1,6 +1,5 @@
 make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/varun/coding/projects/-100daysofrtl/template'
-make: Leaving directory '/home/varun/coding/projects/-100daysofrtl/template'
+make: Entering directory '/home/varun/coding/projects/-100daysofrtl/project_template'
+make: Nothing to be done for 'all'.
+make: Leaving directory '/home/varun/coding/projects/-100daysofrtl/project_template'
  
-make: *** No targets specified and no makefile found.  Stop.
-
