@@ -1,0 +1,58 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+:vpi_module "v2009";
+S_0x562a03ea5950 .scope module, "project_template" "project_template" 2 5;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "a"
+    .port_info 1 /INPUT 1 "b"
+    .port_info 2 /OUTPUT 1 "c"
+o0x7ffb07c9e048 .functor BUFZ 1, C4<z>; HiZ drive
+v0x562a03e8b1f0_0 .net "a", 0 0, o0x7ffb07c9e048;  0 drivers
+o0x7ffb07c9e018 .functor BUFZ 1, C4<z>; HiZ drive
+v0x562a03e8b2b0_0 .net "b", 0 0, o0x7ffb07c9e018;  0 drivers
+v0x562a03e8b3f0_0 .net "c", 0 0, L_0x562a03e8f320;  1 drivers
+S_0x562a03ea5ad0 .scope module, "_0_" "sky130_fd_sc_hd__lpflow_inputiso1p_1" 2 12, 3 49258 1, S_0x562a03ea5950;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "X"
+    .port_info 1 /INPUT 1 "A"
+    .port_info 2 /INPUT 1 "SLEEP"
+v0x562a03ea7e50_0 .net "A", 0 0, o0x7ffb07c9e018;  alias, 0 drivers
+v0x562a03ea7ef0_0 .net "SLEEP", 0 0, o0x7ffb07c9e048;  alias, 0 drivers
+L_0x562a03e8b540 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x562a03eab4f0_0 .net8 "VGND", 0 0, L_0x562a03e8b540;  1 drivers, strength-aware
+L_0x562a03d2e9d0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x562a03eab590_0 .net8 "VNB", 0 0, L_0x562a03d2e9d0;  1 drivers, strength-aware
+L_0x562a03d28050 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x562a03eab630_0 .net8 "VPB", 0 0, L_0x562a03d28050;  1 drivers, strength-aware
+L_0x562a03d272c0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x562a03eab720_0 .net8 "VPWR", 0 0, L_0x562a03d272c0;  1 drivers, strength-aware
+v0x562a03eab7c0_0 .net "X", 0 0, L_0x562a03e8f320;  alias, 1 drivers
+S_0x562a03ea9820 .scope module, "base" "sky130_fd_sc_hd__lpflow_inputiso1p" 3 49274, 3 49149 1, S_0x562a03ea5ad0;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "X"
+    .port_info 1 /INPUT 1 "A"
+    .port_info 2 /INPUT 1 "SLEEP"
+L_0x562a03e8f320 .functor OR 1, o0x7ffb07c9e018, o0x7ffb07c9e048, C4<0>, C4<0>;
+v0x562a03ea99a0_0 .net "A", 0 0, o0x7ffb07c9e018;  alias, 0 drivers
+v0x562a03ea9a40_0 .net "SLEEP", 0 0, o0x7ffb07c9e048;  alias, 0 drivers
+L_0x562a03ea5c50 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x562a03ea9ae0_0 .net8 "VGND", 0 0, L_0x562a03ea5c50;  1 drivers, strength-aware
+L_0x562a03e8f110 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x562a03ea9b80_0 .net8 "VNB", 0 0, L_0x562a03e8f110;  1 drivers, strength-aware
+L_0x562a03e8f1b0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x562a03ea7b90_0 .net8 "VPB", 0 0, L_0x562a03e8f1b0;  1 drivers, strength-aware
+L_0x562a03e8f250 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x562a03ea7c50_0 .net8 "VPWR", 0 0, L_0x562a03e8f250;  1 drivers, strength-aware
+v0x562a03ea7d10_0 .net "X", 0 0, L_0x562a03e8f320;  alias, 1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "../synth/project_template_synth.v";
+    "../../yosys_sky130/lib/verilog_model/sky130_fd_sc_hd.v";
