@@ -1,0 +1,74 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 12;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+:vpi_module "v2009";
+S_0x55c57d6bccb0 .scope module, "mux2X1" "mux2X1" 2 5;
+ .timescale -9 -12;
+    .port_info 0 /INPUT 1 "a"
+    .port_info 1 /INPUT 1 "b"
+    .port_info 2 /INPUT 1 "sel"
+    .port_info 3 /OUTPUT 1 "c"
+o0x7f7e23f84018 .functor BUFZ 1, C4<z>; HiZ drive
+v0x55c57d6a4a20_0 .net "a", 0 0, o0x7f7e23f84018;  0 drivers
+o0x7f7e23f84048 .functor BUFZ 1, C4<z>; HiZ drive
+v0x55c57d6a6470_0 .net "b", 0 0, o0x7f7e23f84048;  0 drivers
+v0x55c57d6a6530_0 .net "c", 0 0, L_0x55c57d6aa0d0;  1 drivers
+o0x7f7e23f84078 .functor BUFZ 1, C4<z>; HiZ drive
+v0x55c57d6a65d0_0 .net "sel", 0 0, o0x7f7e23f84078;  0 drivers
+S_0x55c57d6bce30 .scope module, "_0_" "sky130_fd_sc_hd__mux2_1" 2 14, 3 29526 1, S_0x55c57d6bccb0;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "X"
+    .port_info 1 /INPUT 1 "A0"
+    .port_info 2 /INPUT 1 "A1"
+    .port_info 3 /INPUT 1 "S"
+v0x55c57d6a2550_0 .net "A0", 0 0, o0x7f7e23f84018;  alias, 0 drivers
+v0x55c57d6a2610_0 .net "A1", 0 0, o0x7f7e23f84048;  alias, 0 drivers
+v0x55c57d6a26b0_0 .net "S", 0 0, o0x7f7e23f84078;  alias, 0 drivers
+L_0x55c57d6a6740 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x55c57d6a27b0_0 .net8 "VGND", 0 0, L_0x55c57d6a6740;  1 drivers, strength-aware
+L_0x55c57d6a67d0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x55c57d6a2850_0 .net8 "VNB", 0 0, L_0x55c57d6a67d0;  1 drivers, strength-aware
+L_0x55c57d53e620 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x55c57d6a47b0_0 .net8 "VPB", 0 0, L_0x55c57d53e620;  1 drivers, strength-aware
+L_0x55c57d6bcfb0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x55c57d6a4850_0 .net8 "VPWR", 0 0, L_0x55c57d6bcfb0;  1 drivers, strength-aware
+v0x55c57d6a48f0_0 .net "X", 0 0, L_0x55c57d6aa0d0;  alias, 1 drivers
+S_0x55c57d6beef0 .scope module, "base" "sky130_fd_sc_hd__mux2" 3 29544, 3 29836 1, S_0x55c57d6bce30;
+ .timescale -9 -12;
+    .port_info 0 /OUTPUT 1 "X"
+    .port_info 1 /INPUT 1 "A0"
+    .port_info 2 /INPUT 1 "A1"
+    .port_info 3 /INPUT 1 "S"
+UDP_sky130_fd_sc_hd__udp_mux_2to1 .udp/comb "sky130_fd_sc_hd__udp_mux_2to1", 3
+ ,"00?0"
+ ,"11?1"
+ ,"0?00"
+ ,"1?01"
+ ,"?010"
+ ,"?111";
+L_0x55c57d6a9f70 .udp UDP_sky130_fd_sc_hd__udp_mux_2to1, o0x7f7e23f84018, o0x7f7e23f84048, o0x7f7e23f84078;
+L_0x55c57d6aa0d0 .functor BUF 1, L_0x55c57d6a9f70, C4<0>, C4<0>, C4<0>;
+v0x55c57d6bf0e0_0 .net "A0", 0 0, o0x7f7e23f84018;  alias, 0 drivers
+v0x55c57d6c0e30_0 .net "A1", 0 0, o0x7f7e23f84048;  alias, 0 drivers
+v0x55c57d6c0ef0_0 .net "S", 0 0, o0x7f7e23f84078;  alias, 0 drivers
+L_0x55c57d6a28f0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x55c57d6bf180_0 .net8 "VGND", 0 0, L_0x55c57d6a28f0;  1 drivers, strength-aware
+L_0x55c57d6a4b50 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x55c57d6bf240_0 .net8 "VNB", 0 0, L_0x55c57d6a4b50;  1 drivers, strength-aware
+L_0x55c57d6a9e10 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x55c57d6c2850_0 .net8 "VPB", 0 0, L_0x55c57d6a9e10;  1 drivers, strength-aware
+L_0x55c57d6a9ea0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x55c57d6c2910_0 .net8 "VPWR", 0 0, L_0x55c57d6a9ea0;  1 drivers, strength-aware
+v0x55c57d6c29d0_0 .net "X", 0 0, L_0x55c57d6aa0d0;  alias, 1 drivers
+v0x55c57d6c2a90_0 .net "mux_2to10_out_X", 0 0, L_0x55c57d6a9f70;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "../synth/2x1mux_synth.v";
+    "../../yosys_sky130/lib/verilog_model/sky130_fd_sc_hd.v";

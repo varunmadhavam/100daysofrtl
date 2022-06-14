@@ -1,0 +1,7 @@
+TOPLEVEL_LANG = verilog
+SIM = icarus
+VERILOG_SOURCES = ../synth/2x1mux_synth.v  ../../yosys_sky130/lib/verilog_model/primitives.v ../../yosys_sky130/lib/verilog_model/sky130_fd_sc_hd.v
+TOPLEVEL = mux2X1
+MODULE = test
+
+include $(shell cocotb-config --makefiles)/Makefile.sim
