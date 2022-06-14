@@ -1,6 +1,0 @@
-read_verilog flop.v
-read_liberty -lib ../../lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-synth -top flop
-abc -liberty ../../lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-dfflibmap -liberty ../../lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-show
