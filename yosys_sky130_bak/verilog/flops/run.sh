@@ -1,0 +1,1 @@
+yosys -s run.ys
