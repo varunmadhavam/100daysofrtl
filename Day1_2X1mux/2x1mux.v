@@ -8,4 +8,9 @@ module mux2X1(a,b,sel,c);
                      if(sel==1)
                             c=b;
               end
+       initial 
+              begin
+                     $dumpfile("mux2X1.vcd");
+                     $dumpvars(0,mux2X1);
+              end
 endmodule

@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 14 10:13:56 2022
+# Make data base, printed on Tue Jun 14 11:09:52 2022
 
 # Variables
 
@@ -73,7 +73,7 @@ VSCODE_VERBOSE_LOGGING = true
 # environment
 MANAGERPID = 1991
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b12a3c15-11ba-448f-ab74-66d899388269.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-b40814e6-79d0-4ab9-a3ae-e82608d003e4.sock
 # environment
 VSCODE_CWD = /home/varun/coding/projects/-100daysofrtl
 # environment
@@ -197,7 +197,7 @@ LESS = -R
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/varun/coding/projects/-100daysofrtl
+OLDPWD = /home/varun/coding/projects/-100daysofrtl/project_template
 # default
 .VARIABLES := 
 # automatic
@@ -235,7 +235,7 @@ LC_ALL = C
 # environment
 DBUS_STARTER_BUS_TYPE = session
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/c58cdd4f_c543_4f1f_b5bf_064d6bee5eee
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/b2b2035c_3438_46d0_96ee_a58261a83de3
 # automatic
 ^F = $(notdir $^)
 # environment
@@ -257,7 +257,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 21356
+VSCODE_PID = 29396
 # environment
 DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=52d9e19ebd923d4b44f8d52f62a7261b
 # variable set hash-table stats:
@@ -269,9 +269,9 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=52d9e19ebd923d4b44f8d52
 
 # Directories
 
-# . (device 66306, inode 2897622): 7 files, no impossibilities.
+# . (device 66306, inode 2897622): 8 files, no impossibilities.
 
-# 7 files, no impossibilities in 1 directories.
+# 8 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -280,6 +280,7 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=52d9e19ebd923d4b44f8d52
 # Files
 
 cleanapp:
+ 
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -309,7 +310,6 @@ Makefile:
 App:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
- 
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 12):
 	$(MAKE) -C main_App
@@ -357,12 +357,12 @@ flashbit:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 165 B / avg = 8 B
-# current buf: size = 8162 B / used = 165 B / count = 19 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 20 / storage = 177 B / avg = 8 B
+# current buf: size = 8162 B / used = 177 B / count = 20 / avg = 8 B
 
-# strcache performance: lookups = 35 / hit rate = 45%
+# strcache performance: lookups = 36 / hit rate = 44%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=1/35=3%
-# Finished Make data base on Tue Jun 14 10:13:56 2022
+# Load=20/8192=0%, Rehash=0, Collisions=1/36=3%
+# Finished Make data base on Tue Jun 14 11:09:52 2022
 
  

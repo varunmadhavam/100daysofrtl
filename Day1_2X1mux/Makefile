@@ -10,6 +10,9 @@ gls: synth
 synth:
 	$(MAKE) -C synth
 
+wave:
+	gtkwave ./Test/*.vcd
+
 clean:
 	$(MAKE) -C Test clean
 
