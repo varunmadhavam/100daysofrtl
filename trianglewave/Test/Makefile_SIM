@@ -1,7 +1,0 @@
-TOPLEVEL_LANG = verilog
-SIM = icarus
-VERILOG_SOURCES = ../trianglewave.v #change 
-TOPLEVEL = trianglewave #change
-MODULE = test
-
-include $(shell cocotb-config --makefiles)/Makefile.sim
