@@ -11,7 +11,7 @@ synth:
 	$(MAKE) -C synth
 
 wave:
-	gtkwave ./Test/top.vcd
+	gtkwave ./Test/sim.vcd
 
 clean:
 	rm -f ./synth/*.v ./synth/*.sp
