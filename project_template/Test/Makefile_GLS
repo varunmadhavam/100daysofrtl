@@ -1,7 +1,7 @@
 TOPLEVEL_LANG = verilog
 SIM = icarus
-VERILOG_SOURCES = ../top.v ../synth/synth.v  ../../yosys_sky130/lib/verilog_model/primitives.v ../../yosys_sky130/lib/verilog_model/sky130_fd_sc_hd.v
-TOPLEVEL = top
+VERILOG_SOURCES = ../sim.v ../synth/synth.v  ../../yosys_sky130/lib/verilog_model/primitives.v ../../yosys_sky130/lib/verilog_model/sky130_fd_sc_hd.v
+TOPLEVEL = sim
 MODULE = test
 
 include $(shell cocotb-config --makefiles)/Makefile.sim
