@@ -6,5 +6,6 @@ module top(a,b,c);
         begin
             $dumpfile("top.vcd");
             $dumpvars(0,top);
+            #1;
         end
 endmodule

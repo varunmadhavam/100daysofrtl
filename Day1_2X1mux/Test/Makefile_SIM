@@ -1,7 +1,7 @@
 TOPLEVEL_LANG = verilog
 SIM = icarus
-VERILOG_SOURCES = ../2x1mux.v #change 
-TOPLEVEL = mux2X1 #change
+VERILOG_SOURCES = ../*.v #change 
+TOPLEVEL = top #change
 MODULE = test
 
 include $(shell cocotb-config --makefiles)/Makefile.sim

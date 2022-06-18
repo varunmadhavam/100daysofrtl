@@ -1,9 +1,12 @@
-read_verilog ../2x1mux.v
+read_verilog ../*.v
+hierarchy -top top
 read_liberty -lib ../../yosys_sky130/lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-synth -top mux2X1
+synth -top top
 dfflibmap -liberty ../../yosys_sky130/lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 abc -liberty ../../yosys_sky130/lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 clean
-write_verilog 2x1mux_synth.v
-write_spice 2x1mux_synth.sp
+write_verilog -noattr top_synth.v
+flatten
+write_verilog -noattr top_flatten_synth.v
+write_spice top_synth.sp
 show

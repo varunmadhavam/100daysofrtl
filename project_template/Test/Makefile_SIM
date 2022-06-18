@@ -1,6 +1,6 @@
 TOPLEVEL_LANG = verilog
 SIM = icarus
-VERILOG_SOURCES = ../top.v ../project_template.v #change 
+VERILOG_SOURCES = ../top.v ../src/*.v #change 
 TOPLEVEL = top #change
 MODULE = test
 
