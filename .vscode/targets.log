@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jun 14 19:18:19 2022
+# Make data base, printed on Sat Jun 18 09:43:10 2022
 
 # Variables
 
@@ -38,19 +38,18 @@ XAUTHORITY = /run/user/1000/gdm/Xauthority
 GDMSESSION = ubuntu
 # environment
 XMODIFIERS = @im=ibus
- 
 # makefile
-CURDIR := /home/varun/coding/projects/-100daysofrtl
+CURDIR := /home/varun/coding/projects/100daysofrtl
 # makefile
 SHELL = /bin/sh
 # environment
-SNAP_DATA = /var/snap/code/98
+SNAP_DATA = /var/snap/code/99
 # environment
 VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:50153
+JOURNAL_STREAM = 8:54252
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -68,17 +67,17 @@ USERNAME = varun
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=52d9e19ebd923d4b44f8d52f62a7261b
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 1991
+MANAGERPID = 1735
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f690aa7e-cac1-4644-b2bb-44b73145486d.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f4ec2d4f-34c2-415e-8923-e0cffe4cfbac.sock
 # environment
-VSCODE_CWD = /home/varun/coding/projects/-100daysofrtl
+VSCODE_CWD = /home/varun/coding/projects/100daysofrtl
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/98/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/99/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -88,15 +87,15 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/varuns5600x:@/tmp/.ICE-unix/5955,unix/varuns5600x:/tmp/.ICE-unix/5955
+SESSION_MANAGER = local/varuns5600x:@/tmp/.ICE-unix/5977,unix/varuns5600x:/tmp/.ICE-unix/5977
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/varun/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-SNAP = /snap/code/98
+SNAP = /snap/code/99
 # environment
-SNAP_VERSION = 4af164ea
+SNAP_VERSION = 30d9c6cd
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -106,9 +105,9 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 0204ceb588cc46bfa6675d94abdcbd14
+INVOCATION_ID = 905a75b2802b45029d24f9e248f44202
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/98/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/99/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -128,11 +127,11 @@ VSCODE_PIPE_LOGGING = true
 # environment
 SNAP_INSTANCE_KEY = 
 # environment
-PWD = /home/varun/coding/projects/-100daysofrtl
+PWD = /home/varun/coding/projects/100daysofrtl
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 5918
+SSH_AGENT_PID = 5941
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -144,7 +143,7 @@ HOME = /home/varun
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/varun/.config/Code/CachedData/4af164ea3a06f701fe3e89a2bcbb421d2026b68f
+VSCODE_CODE_CACHE_PATH = /home/varun/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
 # environment
 LOGNAME = varun
 # environment
@@ -160,7 +159,6 @@ SNAP_USER_COMMON = /home/varun/snap/code/common
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # environment
- 
 GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
@@ -177,7 +175,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SNAP_USER_DATA = /home/varun/snap/code/98
+SNAP_USER_DATA = /home/varun/snap/code/99
 # environment
 SHLVL = 1
 # environment
@@ -187,7 +185,7 @@ MAKE_VERSION := 4.2.1
 # environment
 USER = varun
 # environment
-SNAP_REVISION = 98
+SNAP_REVISION = 99
 # makefile
 .DEFAULT_GOAL := all
 # environment
@@ -199,7 +197,7 @@ LESS = -R
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/varun/coding/projects/-100daysofrtl/Day1_2X1mux
+OLDPWD = /home/varun/coding/projects
 # default
 .VARIABLES := 
 # automatic
@@ -207,7 +205,7 @@ OLDPWD = /home/varun/coding/projects/-100daysofrtl/Day1_2X1mux
 # environment
 LANGUAGE = en_IN:en
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-cb518e20-1.68.0-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-cb518e20-1.68.1-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -235,13 +233,13 @@ PAGER = less
 # environment
 LC_ALL = C
 # environment
-DBUS_STARTER_BUS_TYPE = session
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/b2b2035c_3438_46d0_96ee_a58261a83de3
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/96c1ec8c_ed52_45b4_a335_a06f972e9cae
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.249
+GNOME_TERMINAL_SERVICE = :1.102
 # default
 SUFFIXES := 
 # environment
@@ -252,6 +250,8 @@ CHROME_DESKTOP = code-url-handler.desktop
 WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+GJS_DEBUG_OUTPUT = stderr
 # default
 .RECIPEPREFIX := 
 # environment
@@ -259,9 +259,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 33916
-# environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=52d9e19ebd923d4b44f8d52f62a7261b
+VSCODE_PID = 10108
 # variable set hash-table stats:
 # Load=125/1024=12%, Rehash=0, Collisions=15/150=10%
 
@@ -286,6 +284,7 @@ cleanapp:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
+ 
 #  recipe to execute (from 'Makefile', line 15):
 	$(MAKE) -C main_App clean
 
@@ -364,6 +363,6 @@ flashbit:
 # strcache performance: lookups = 37 / hit rate = 43%
 # hash-table stats:
 # Load=21/8192=0%, Rehash=0, Collisions=1/37=3%
-# Finished Make data base on Tue Jun 14 19:18:19 2022
+# Finished Make data base on Sat Jun 18 09:43:10 2022
 
  
