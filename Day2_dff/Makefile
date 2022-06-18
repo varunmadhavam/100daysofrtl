@@ -11,9 +11,12 @@ synth:
 	$(MAKE) -C synth
 
 wave:
-	gtkwave ./Test/*.vcd
+	gtkwave ./Test/sim.vcd
 
 clean:
-	$(MAKE) -C Test clean
+	rm -f ./synth/*.v ./synth/*.sp
+	rm -f ./Test/*.vcd
+	$(MAKE) -C Test -f Makefile_GLS clean
+	$(MAKE) -C Test -f Makefile_SIM clean
 
 .PHONY: clean synth

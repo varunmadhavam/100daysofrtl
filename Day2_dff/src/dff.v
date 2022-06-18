@@ -25,10 +25,4 @@ module dff(clk,rst_n,d,q_no_rst,q_syn_rst,q_asyn_rst);
                      else
                             q_syn_rst<=d;
               end
-
-       initial 
-              begin
-                     $dumpfile("dff.vcd");
-                     $dumpvars(0,dff);
-              end
 endmodule
