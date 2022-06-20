@@ -2,9 +2,13 @@
 all:
 
 sim:
+	$(MAKE) -C Test -f Makefile_GLS clean
+	$(MAKE) -C Test -f Makefile_SIM clean
 	$(MAKE) -C Test -f Makefile_SIM
 
 gls: synth
+	$(MAKE) -C Test -f Makefile_GLS clean
+	$(MAKE) -C Test -f Makefile_SIM clean
 	$(MAKE) -C Test -f Makefile_GLS
 
 synth:
