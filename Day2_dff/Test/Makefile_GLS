@@ -3,5 +3,6 @@ SIM = icarus
 VERILOG_SOURCES = ../sim.v ../synth/synth.v  ../../yosys_sky130/lib/verilog_model/primitives.v ../../yosys_sky130/lib/verilog_model/sky130_fd_sc_hd.v
 TOPLEVEL = sim
 MODULE = test
+COMPILE_ARGS += -DFUNCTIONAL -DUNIT_DELAY=#1
 
 include $(shell cocotb-config --makefiles)/Makefile.sim

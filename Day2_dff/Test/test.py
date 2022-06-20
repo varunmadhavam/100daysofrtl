@@ -9,7 +9,13 @@ from cocotb.triggers import FallingEdge
 async def runTest(dut):
     await cocotb.start(Clock(dut.clk, 10, units="ns").start())
     dut.rst_n.value=1
-
+    dut.d.value=0
+    await FallingEdge(dut.clk)
+    await FallingEdge(dut.clk)
+    dut.rst_n.value=0
+    await FallingEdge(dut.clk)
+    await FallingEdge(dut.clk)
+    dut.rst_n.value=1
     for _ in range(100):
             await FallingEdge(dut.clk)
             dut.d.value=random.getrandbits(1)
