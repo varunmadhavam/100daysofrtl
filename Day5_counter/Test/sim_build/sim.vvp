@@ -7,247 +7,247 @@
 :vpi_module "v2005_math";
 :vpi_module "va_math";
 :vpi_module "v2009";
-S_0x563fb9af21f0 .scope module, "sim" "sim" 2 1;
+S_0x563214f3a1f0 .scope module, "sim" "sim" 2 1;
  .timescale -9 -12;
     .port_info 0 /INPUT 1 "clk"
     .port_info 1 /INPUT 1 "rst_n"
     .port_info 2 /OUTPUT 4 "count_o"
-P_0x563fb9a089a0 .param/l "n" 0 2 1, +C4<00000000000000000000000000000100>;
-o0x7ff20477f038 .functor BUFZ 1, C4<z>; HiZ drive
-v0x563fb993faf0_0 .net "clk", 0 0, o0x7ff20477f038;  0 drivers
-v0x563fb993fb90_0 .net "count_o", 3 0, L_0x563fb9a92130;  1 drivers
-o0x7ff20477f0f8 .functor BUFZ 1, C4<z>; HiZ drive
-v0x563fb993fca0_0 .net "rst_n", 0 0, o0x7ff20477f0f8;  0 drivers
-S_0x563fb9af1e90 .scope module, "dut" "top" 2 4, 3 67 0, S_0x563fb9af21f0;
+P_0x563214e509a0 .param/l "n" 0 2 1, +C4<00000000000000000000000000000100>;
+o0x7f03deb20038 .functor BUFZ 1, C4<z>; HiZ drive
+v0x563214d87af0_0 .net "clk", 0 0, o0x7f03deb20038;  0 drivers
+v0x563214d87b90_0 .net "count_o", 3 0, L_0x563214eda130;  1 drivers
+o0x7f03deb200f8 .functor BUFZ 1, C4<z>; HiZ drive
+v0x563214d87ca0_0 .net "rst_n", 0 0, o0x7f03deb200f8;  0 drivers
+S_0x563214f39e90 .scope module, "dut" "top" 2 4, 3 67 0, S_0x563214f3a1f0;
  .timescale -9 -12;
     .port_info 0 /INPUT 1 "clk"
     .port_info 1 /INPUT 1 "rst_n"
     .port_info 2 /OUTPUT 4 "count_o"
-v0x563fb993e520_0 .net "clk", 0 0, o0x7ff20477f038;  alias, 0 drivers
-v0x563fb993e5c0_0 .net "count_o", 3 0, L_0x563fb9a92130;  alias, 1 drivers
-v0x563fb993f9c0_0 .net "rst_n", 0 0, o0x7ff20477f0f8;  alias, 0 drivers
-S_0x563fb9af8120 .scope module, "counter_inst" "$paramod\\counter\\n=s32'00000000000000000000000000000100" 3 71, 3 3 0, S_0x563fb9af1e90;
+v0x563214d86520_0 .net "clk", 0 0, o0x7f03deb20038;  alias, 0 drivers
+v0x563214d865c0_0 .net "count_o", 3 0, L_0x563214eda130;  alias, 1 drivers
+v0x563214d879c0_0 .net "rst_n", 0 0, o0x7f03deb200f8;  alias, 0 drivers
+S_0x563214f40120 .scope module, "counter_inst" "$paramod\\counter\\n=s32'00000000000000000000000000000100" 3 71, 3 3 0, S_0x563214f39e90;
  .timescale -9 -12;
     .port_info 0 /INPUT 1 "clk"
     .port_info 1 /INPUT 1 "rst_n"
     .port_info 2 /OUTPUT 4 "count_o"
-v0x563fb9914f20_0 .net "_00_", 0 0, L_0x563fb979faa0;  1 drivers
-v0x563fb9914fe0_0 .net "_01_", 0 0, L_0x563fb979a200;  1 drivers
-v0x563fb99150a0_0 .net "clk", 0 0, o0x7ff20477f038;  alias, 0 drivers
-v0x563fb993e280_0 .net "count_next", 3 0, L_0x563fb99cb4e0;  1 drivers
-v0x563fb993e320_0 .net "count_o", 3 0, L_0x563fb9a92130;  alias, 1 drivers
-v0x563fb993e400_0 .net "rst_n", 0 0, o0x7ff20477f0f8;  alias, 0 drivers
-L_0x563fb9ac1cd0 .part L_0x563fb9a92130, 0, 1;
-L_0x563fb979f850 .part L_0x563fb9a92130, 1, 1;
-L_0x563fb979f8f0 .part L_0x563fb9a92130, 0, 1;
-L_0x563fb979fb80 .part L_0x563fb9a92130, 1, 1;
-L_0x563fb979beb0 .part L_0x563fb9a92130, 0, 1;
-L_0x563fb979bf50 .part L_0x563fb9a92130, 2, 1;
-L_0x563fb979a2c0 .part L_0x563fb9a92130, 1, 1;
-L_0x563fb979a360 .part L_0x563fb9a92130, 0, 1;
-L_0x563fb979a450 .part L_0x563fb9a92130, 2, 1;
-L_0x563fb99cb4e0 .concat8 [ 1 1 1 1], L_0x563fb9ac1c10, L_0x563fb9ac1ec0, L_0x563fb979dc90, L_0x563fb979de80;
-L_0x563fb99cb580 .part L_0x563fb9a92130, 3, 1;
-L_0x563fb99cdbd0 .part L_0x563fb99cb4e0, 0, 1;
-L_0x563fb9a8e820 .part L_0x563fb99cb4e0, 1, 1;
-L_0x563fb9a8eb70 .part L_0x563fb99cb4e0, 2, 1;
-L_0x563fb9a92130 .concat8 [ 1 1 1 1], L_0x563fb99cb770, L_0x563fb99cded0, L_0x563fb9a8ea60, L_0x563fb9a92020;
-L_0x563fb9a921d0 .part L_0x563fb99cb4e0, 3, 1;
-S_0x563fb9af7570 .scope module, "_02_" "sky130_fd_sc_hd__clkinv_1" 3 10, 4 18836 1, S_0x563fb9af8120;
+v0x563214d5cf20_0 .net "_00_", 0 0, L_0x563214be7aa0;  1 drivers
+v0x563214d5cfe0_0 .net "_01_", 0 0, L_0x563214be2200;  1 drivers
+v0x563214d5d0a0_0 .net "clk", 0 0, o0x7f03deb20038;  alias, 0 drivers
+v0x563214d86280_0 .net "count_next", 3 0, L_0x563214e134e0;  1 drivers
+v0x563214d86320_0 .net "count_o", 3 0, L_0x563214eda130;  alias, 1 drivers
+v0x563214d86400_0 .net "rst_n", 0 0, o0x7f03deb200f8;  alias, 0 drivers
+L_0x563214f09cd0 .part L_0x563214eda130, 0, 1;
+L_0x563214be7850 .part L_0x563214eda130, 1, 1;
+L_0x563214be78f0 .part L_0x563214eda130, 0, 1;
+L_0x563214be7b80 .part L_0x563214eda130, 1, 1;
+L_0x563214be3eb0 .part L_0x563214eda130, 0, 1;
+L_0x563214be3f50 .part L_0x563214eda130, 2, 1;
+L_0x563214be22c0 .part L_0x563214eda130, 1, 1;
+L_0x563214be2360 .part L_0x563214eda130, 0, 1;
+L_0x563214be2450 .part L_0x563214eda130, 2, 1;
+L_0x563214e134e0 .concat8 [ 1 1 1 1], L_0x563214f09c10, L_0x563214f09ec0, L_0x563214be5c90, L_0x563214be5e80;
+L_0x563214e13580 .part L_0x563214eda130, 3, 1;
+L_0x563214e15bd0 .part L_0x563214e134e0, 0, 1;
+L_0x563214ed6820 .part L_0x563214e134e0, 1, 1;
+L_0x563214ed6b70 .part L_0x563214e134e0, 2, 1;
+L_0x563214eda130 .concat8 [ 1 1 1 1], L_0x563214e13770, L_0x563214e15ed0, L_0x563214ed6a60, L_0x563214eda020;
+L_0x563214eda1d0 .part L_0x563214e134e0, 3, 1;
+S_0x563214f3f570 .scope module, "_02_" "sky130_fd_sc_hd__clkinv_1" 3 10, 4 18836 1, S_0x563214f40120;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Y"
     .port_info 1 /INPUT 1 "A"
-v0x563fb9af3e90_0 .net "A", 0 0, L_0x563fb9ac1cd0;  1 drivers
-L_0x563fb9913a20 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb9af4860_0 .net8 "VGND", 0 0, L_0x563fb9913a20;  1 drivers, strength-aware
-L_0x563fb9af2a20 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb9af58e0_0 .net8 "VNB", 0 0, L_0x563fb9af2a20;  1 drivers, strength-aware
-L_0x563fb9782ce0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb9af7d20_0 .net8 "VPB", 0 0, L_0x563fb9782ce0;  1 drivers, strength-aware
-L_0x563fb977c360 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb9af7dc0_0 .net8 "VPWR", 0 0, L_0x563fb977c360;  1 drivers, strength-aware
-v0x563fb9af7120_0 .net "Y", 0 0, L_0x563fb9ac1c10;  1 drivers
-S_0x563fb9af6970 .scope module, "base" "sky130_fd_sc_hd__clkinv" 4 18850, 4 18476 1, S_0x563fb9af7570;
+v0x563214f3be90_0 .net "A", 0 0, L_0x563214f09cd0;  1 drivers
+L_0x563214d5ba20 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214f3c860_0 .net8 "VGND", 0 0, L_0x563214d5ba20;  1 drivers, strength-aware
+L_0x563214f3aa20 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214f3d8e0_0 .net8 "VNB", 0 0, L_0x563214f3aa20;  1 drivers, strength-aware
+L_0x563214bcace0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214f3fd20_0 .net8 "VPB", 0 0, L_0x563214bcace0;  1 drivers, strength-aware
+L_0x563214bc4360 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214f3fdc0_0 .net8 "VPWR", 0 0, L_0x563214bc4360;  1 drivers, strength-aware
+v0x563214f3f120_0 .net "Y", 0 0, L_0x563214f09c10;  1 drivers
+S_0x563214f3e970 .scope module, "base" "sky130_fd_sc_hd__clkinv" 4 18850, 4 18476 1, S_0x563214f3f570;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Y"
     .port_info 1 /INPUT 1 "A"
-L_0x563fb9ac5900 .functor NOT 1, L_0x563fb9ac1cd0, C4<0>, C4<0>, C4<0>;
-L_0x563fb9ac1c10 .functor BUF 1, L_0x563fb9ac5900, C4<0>, C4<0>, C4<0>;
-v0x563fb9af7260_0 .net "A", 0 0, L_0x563fb9ac1cd0;  alias, 1 drivers
-v0x563fb9af6660_0 .net "Y", 0 0, L_0x563fb9ac1c10;  alias, 1 drivers
-v0x563fb9af5a00_0 .net "not0_out_Y", 0 0, L_0x563fb9ac5900;  1 drivers
-S_0x563fb9af5d40 .scope module, "_03_" "sky130_fd_sc_hd__xor2_1" 3 14, 4 39544 1, S_0x563fb9af8120;
+L_0x563214f0d900 .functor NOT 1, L_0x563214f09cd0, C4<0>, C4<0>, C4<0>;
+L_0x563214f09c10 .functor BUF 1, L_0x563214f0d900, C4<0>, C4<0>, C4<0>;
+v0x563214f3f260_0 .net "A", 0 0, L_0x563214f09cd0;  alias, 1 drivers
+v0x563214f3e660_0 .net "Y", 0 0, L_0x563214f09c10;  alias, 1 drivers
+v0x563214f3da00_0 .net "not0_out_Y", 0 0, L_0x563214f0d900;  1 drivers
+S_0x563214f3dd40 .scope module, "_03_" "sky130_fd_sc_hd__xor2_1" 3 14, 4 39544 1, S_0x563214f40120;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "X"
     .port_info 1 /INPUT 1 "A"
     .port_info 2 /INPUT 1 "B"
-v0x563fb9af5320_0 .net "A", 0 0, L_0x563fb979f850;  1 drivers
-v0x563fb9af53f0_0 .net "B", 0 0, L_0x563fb979f8f0;  1 drivers
-L_0x563fb977b540 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb98eb8e0_0 .net8 "VGND", 0 0, L_0x563fb977b540;  1 drivers, strength-aware
-L_0x563fb974fb30 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb98eb9b0_0 .net8 "VNB", 0 0, L_0x563fb974fb30;  1 drivers, strength-aware
-L_0x563fb9af4900 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb98eba50_0 .net8 "VPB", 0 0, L_0x563fb9af4900;  1 drivers, strength-aware
-L_0x563fb9af5980 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb98ebb40_0 .net8 "VPWR", 0 0, L_0x563fb9af5980;  1 drivers, strength-aware
-v0x563fb974f250_0 .net "X", 0 0, L_0x563fb9ac1ec0;  1 drivers
-S_0x563fb9af1450 .scope module, "base" "sky130_fd_sc_hd__xor2" 4 39560, 4 39793 1, S_0x563fb9af5d40;
+v0x563214f3d320_0 .net "A", 0 0, L_0x563214be7850;  1 drivers
+v0x563214f3d3f0_0 .net "B", 0 0, L_0x563214be78f0;  1 drivers
+L_0x563214bc3540 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214d338e0_0 .net8 "VGND", 0 0, L_0x563214bc3540;  1 drivers, strength-aware
+L_0x563214b97b30 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214d339b0_0 .net8 "VNB", 0 0, L_0x563214b97b30;  1 drivers, strength-aware
+L_0x563214f3c900 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214d33a50_0 .net8 "VPB", 0 0, L_0x563214f3c900;  1 drivers, strength-aware
+L_0x563214f3d980 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214d33b40_0 .net8 "VPWR", 0 0, L_0x563214f3d980;  1 drivers, strength-aware
+v0x563214b97250_0 .net "X", 0 0, L_0x563214f09ec0;  1 drivers
+S_0x563214f39450 .scope module, "base" "sky130_fd_sc_hd__xor2" 4 39560, 4 39793 1, S_0x563214f3dd40;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "X"
     .port_info 1 /INPUT 1 "A"
     .port_info 2 /INPUT 1 "B"
-L_0x563fb9ac1d90 .functor XOR 1, L_0x563fb979f8f0, L_0x563fb979f850, C4<0>, C4<0>;
-L_0x563fb9ac1ec0 .functor BUF 1, L_0x563fb9ac1d90, C4<0>, C4<0>, C4<0>;
-v0x563fb9af6520_0 .net "A", 0 0, L_0x563fb979f850;  alias, 1 drivers
-v0x563fb9af19c0_0 .net "B", 0 0, L_0x563fb979f8f0;  alias, 1 drivers
-v0x563fb9af4ea0_0 .net "X", 0 0, L_0x563fb9ac1ec0;  alias, 1 drivers
-v0x563fb9af4f40_0 .net "xor0_out_X", 0 0, L_0x563fb9ac1d90;  1 drivers
-S_0x563fb974f350 .scope module, "_04_" "sky130_fd_sc_hd__nand3_1" 3 19, 4 4208 1, S_0x563fb9af8120;
+L_0x563214f09d90 .functor XOR 1, L_0x563214be78f0, L_0x563214be7850, C4<0>, C4<0>;
+L_0x563214f09ec0 .functor BUF 1, L_0x563214f09d90, C4<0>, C4<0>, C4<0>;
+v0x563214f3e520_0 .net "A", 0 0, L_0x563214be7850;  alias, 1 drivers
+v0x563214f399c0_0 .net "B", 0 0, L_0x563214be78f0;  alias, 1 drivers
+v0x563214f3cea0_0 .net "X", 0 0, L_0x563214f09ec0;  alias, 1 drivers
+v0x563214f3cf40_0 .net "xor0_out_X", 0 0, L_0x563214f09d90;  1 drivers
+S_0x563214b97350 .scope module, "_04_" "sky130_fd_sc_hd__nand3_1" 3 19, 4 4208 1, S_0x563214f40120;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Y"
     .port_info 1 /INPUT 1 "A"
     .port_info 2 /INPUT 1 "B"
     .port_info 3 /INPUT 1 "C"
-v0x563fb98d9440_0 .net "A", 0 0, L_0x563fb979fb80;  1 drivers
-v0x563fb98d9500_0 .net "B", 0 0, L_0x563fb979beb0;  1 drivers
-v0x563fb98d95d0_0 .net "C", 0 0, L_0x563fb979bf50;  1 drivers
-L_0x563fb9af71e0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb98d7620_0 .net8 "VGND", 0 0, L_0x563fb9af71e0;  1 drivers, strength-aware
-L_0x563fb98bedd0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb98d76c0_0 .net8 "VNB", 0 0, L_0x563fb98bedd0;  1 drivers, strength-aware
-L_0x563fb9a88f90 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb98d77b0_0 .net8 "VPB", 0 0, L_0x563fb9a88f90;  1 drivers, strength-aware
-L_0x563fb9942770 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb98d7850_0 .net8 "VPWR", 0 0, L_0x563fb9942770;  1 drivers, strength-aware
-v0x563fb98d78f0_0 .net "Y", 0 0, L_0x563fb979faa0;  alias, 1 drivers
-S_0x563fb98d5900 .scope module, "base" "sky130_fd_sc_hd__nand3" 4 4226, 4 3922 1, S_0x563fb974f350;
+v0x563214d21440_0 .net "A", 0 0, L_0x563214be7b80;  1 drivers
+v0x563214d21500_0 .net "B", 0 0, L_0x563214be3eb0;  1 drivers
+v0x563214d215d0_0 .net "C", 0 0, L_0x563214be3f50;  1 drivers
+L_0x563214f3f1e0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214d1f620_0 .net8 "VGND", 0 0, L_0x563214f3f1e0;  1 drivers, strength-aware
+L_0x563214d06dd0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214d1f6c0_0 .net8 "VNB", 0 0, L_0x563214d06dd0;  1 drivers, strength-aware
+L_0x563214ed0f90 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214d1f7b0_0 .net8 "VPB", 0 0, L_0x563214ed0f90;  1 drivers, strength-aware
+L_0x563214d8a770 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214d1f850_0 .net8 "VPWR", 0 0, L_0x563214d8a770;  1 drivers, strength-aware
+v0x563214d1f8f0_0 .net "Y", 0 0, L_0x563214be7aa0;  alias, 1 drivers
+S_0x563214d1d900 .scope module, "base" "sky130_fd_sc_hd__nand3" 4 4226, 4 3922 1, S_0x563214b97350;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Y"
     .port_info 1 /INPUT 1 "A"
     .port_info 2 /INPUT 1 "B"
     .port_info 3 /INPUT 1 "C"
-L_0x563fb979f990 .functor NAND 1, L_0x563fb979beb0, L_0x563fb979fb80, L_0x563fb979bf50, C4<1>;
-L_0x563fb979faa0 .functor BUF 1, L_0x563fb979f990, C4<0>, C4<0>, C4<0>;
-v0x563fb98d5b00_0 .net "A", 0 0, L_0x563fb979fb80;  alias, 1 drivers
-v0x563fb98d5bc0_0 .net "B", 0 0, L_0x563fb979beb0;  alias, 1 drivers
-v0x563fb98d5c80_0 .net "C", 0 0, L_0x563fb979bf50;  alias, 1 drivers
-v0x563fb974f580_0 .net "Y", 0 0, L_0x563fb979faa0;  alias, 1 drivers
-v0x563fb98d92b0_0 .net "nand0_out_Y", 0 0, L_0x563fb979f990;  1 drivers
-S_0x563fb98daf80 .scope module, "_05_" "sky130_fd_sc_hd__a21oi_1" 3 25, 4 51675 1, S_0x563fb9af8120;
+L_0x563214be7990 .functor NAND 1, L_0x563214be3eb0, L_0x563214be7b80, L_0x563214be3f50, C4<1>;
+L_0x563214be7aa0 .functor BUF 1, L_0x563214be7990, C4<0>, C4<0>, C4<0>;
+v0x563214d1db00_0 .net "A", 0 0, L_0x563214be7b80;  alias, 1 drivers
+v0x563214d1dbc0_0 .net "B", 0 0, L_0x563214be3eb0;  alias, 1 drivers
+v0x563214d1dc80_0 .net "C", 0 0, L_0x563214be3f50;  alias, 1 drivers
+v0x563214b97580_0 .net "Y", 0 0, L_0x563214be7aa0;  alias, 1 drivers
+v0x563214d212b0_0 .net "nand0_out_Y", 0 0, L_0x563214be7990;  1 drivers
+S_0x563214d22f80 .scope module, "_05_" "sky130_fd_sc_hd__a21oi_1" 3 25, 4 51675 1, S_0x563214f40120;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Y"
     .port_info 1 /INPUT 1 "A1"
     .port_info 2 /INPUT 1 "A2"
     .port_info 3 /INPUT 1 "B1"
-v0x563fb98beb70_0 .net "A1", 0 0, L_0x563fb979a2c0;  1 drivers
-v0x563fb98bec30_0 .net "A2", 0 0, L_0x563fb979a360;  1 drivers
-v0x563fb98becd0_0 .net "B1", 0 0, L_0x563fb979a450;  1 drivers
-L_0x563fb9942840 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb98c06f0_0 .net8 "VGND", 0 0, L_0x563fb9942840;  1 drivers, strength-aware
-L_0x563fb99428e0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb98c0790_0 .net8 "VNB", 0 0, L_0x563fb99428e0;  1 drivers, strength-aware
-L_0x563fb9942980 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb98c0880_0 .net8 "VPB", 0 0, L_0x563fb9942980;  1 drivers, strength-aware
-L_0x563fb9942a20 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb98c0920_0 .net8 "VPWR", 0 0, L_0x563fb9942a20;  1 drivers, strength-aware
-v0x563fb98c09c0_0 .net "Y", 0 0, L_0x563fb979a200;  alias, 1 drivers
-S_0x563fb98db150 .scope module, "base" "sky130_fd_sc_hd__a21oi" 4 51693, 4 51493 1, S_0x563fb98daf80;
+v0x563214d06b70_0 .net "A1", 0 0, L_0x563214be22c0;  1 drivers
+v0x563214d06c30_0 .net "A2", 0 0, L_0x563214be2360;  1 drivers
+v0x563214d06cd0_0 .net "B1", 0 0, L_0x563214be2450;  1 drivers
+L_0x563214d8a840 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214d086f0_0 .net8 "VGND", 0 0, L_0x563214d8a840;  1 drivers, strength-aware
+L_0x563214d8a8e0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214d08790_0 .net8 "VNB", 0 0, L_0x563214d8a8e0;  1 drivers, strength-aware
+L_0x563214d8a980 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214d08880_0 .net8 "VPB", 0 0, L_0x563214d8a980;  1 drivers, strength-aware
+L_0x563214d8aa20 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214d08920_0 .net8 "VPWR", 0 0, L_0x563214d8aa20;  1 drivers, strength-aware
+v0x563214d089c0_0 .net "Y", 0 0, L_0x563214be2200;  alias, 1 drivers
+S_0x563214d23150 .scope module, "base" "sky130_fd_sc_hd__a21oi" 4 51693, 4 51493 1, S_0x563214d22f80;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Y"
     .port_info 1 /INPUT 1 "A1"
     .port_info 2 /INPUT 1 "A2"
     .port_info 3 /INPUT 1 "B1"
-L_0x563fb979c100 .functor AND 1, L_0x563fb979a2c0, L_0x563fb979a360, C4<1>, C4<1>;
-L_0x563fb979c1c0 .functor NOR 1, L_0x563fb979a450, L_0x563fb979c100, C4<0>, C4<0>;
-L_0x563fb979a200 .functor BUF 1, L_0x563fb979c1c0, C4<0>, C4<0>, C4<0>;
-v0x563fb98bcd90_0 .net "A1", 0 0, L_0x563fb979a2c0;  alias, 1 drivers
-v0x563fb98bce70_0 .net "A2", 0 0, L_0x563fb979a360;  alias, 1 drivers
-v0x563fb98bcf30_0 .net "B1", 0 0, L_0x563fb979a450;  alias, 1 drivers
-v0x563fb98bd000_0 .net "Y", 0 0, L_0x563fb979a200;  alias, 1 drivers
-v0x563fb98bd0c0_0 .net "and0_out", 0 0, L_0x563fb979c100;  1 drivers
-v0x563fb98bea30_0 .net "nor0_out_Y", 0 0, L_0x563fb979c1c0;  1 drivers
-S_0x563fb98c4090 .scope module, "_06_" "sky130_fd_sc_hd__lpflow_isobufsrc_1" 3 31, 4 79705 1, S_0x563fb9af8120;
+L_0x563214be4100 .functor AND 1, L_0x563214be22c0, L_0x563214be2360, C4<1>, C4<1>;
+L_0x563214be41c0 .functor NOR 1, L_0x563214be2450, L_0x563214be4100, C4<0>, C4<0>;
+L_0x563214be2200 .functor BUF 1, L_0x563214be41c0, C4<0>, C4<0>, C4<0>;
+v0x563214d04d90_0 .net "A1", 0 0, L_0x563214be22c0;  alias, 1 drivers
+v0x563214d04e70_0 .net "A2", 0 0, L_0x563214be2360;  alias, 1 drivers
+v0x563214d04f30_0 .net "B1", 0 0, L_0x563214be2450;  alias, 1 drivers
+v0x563214d05000_0 .net "Y", 0 0, L_0x563214be2200;  alias, 1 drivers
+v0x563214d050c0_0 .net "and0_out", 0 0, L_0x563214be4100;  1 drivers
+v0x563214d06a30_0 .net "nor0_out_Y", 0 0, L_0x563214be41c0;  1 drivers
+S_0x563214d0c090 .scope module, "_06_" "sky130_fd_sc_hd__lpflow_isobufsrc_1" 3 31, 4 79705 1, S_0x563214f40120;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "X"
     .port_info 1 /INPUT 1 "SLEEP"
     .port_info 2 /INPUT 1 "A"
-v0x563fb9798790_0 .net "A", 0 0, L_0x563fb979faa0;  alias, 1 drivers
-v0x563fb9798830_0 .net "SLEEP", 0 0, L_0x563fb979a200;  alias, 1 drivers
-L_0x563fb9942af0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb97988d0_0 .net8 "VGND", 0 0, L_0x563fb9942af0;  1 drivers, strength-aware
-L_0x563fb9941070 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb9798970_0 .net8 "VNB", 0 0, L_0x563fb9941070;  1 drivers, strength-aware
-L_0x563fb9941110 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb9798a10_0 .net8 "VPB", 0 0, L_0x563fb9941110;  1 drivers, strength-aware
-L_0x563fb99411b0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb97953d0_0 .net8 "VPWR", 0 0, L_0x563fb99411b0;  1 drivers, strength-aware
-v0x563fb9795490_0 .net "X", 0 0, L_0x563fb979dc90;  1 drivers
-S_0x563fb98c4300 .scope module, "base" "sky130_fd_sc_hd__lpflow_isobufsrc" 4 79721, 4 80174 1, S_0x563fb98c4090;
+v0x563214be0790_0 .net "A", 0 0, L_0x563214be7aa0;  alias, 1 drivers
+v0x563214be0830_0 .net "SLEEP", 0 0, L_0x563214be2200;  alias, 1 drivers
+L_0x563214d8aaf0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214be08d0_0 .net8 "VGND", 0 0, L_0x563214d8aaf0;  1 drivers, strength-aware
+L_0x563214d89070 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214be0970_0 .net8 "VNB", 0 0, L_0x563214d89070;  1 drivers, strength-aware
+L_0x563214d89110 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214be0a10_0 .net8 "VPB", 0 0, L_0x563214d89110;  1 drivers, strength-aware
+L_0x563214d891b0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214bdd3d0_0 .net8 "VPWR", 0 0, L_0x563214d891b0;  1 drivers, strength-aware
+v0x563214bdd490_0 .net "X", 0 0, L_0x563214be5c90;  1 drivers
+S_0x563214d0c300 .scope module, "base" "sky130_fd_sc_hd__lpflow_isobufsrc" 4 79721, 4 80174 1, S_0x563214d0c090;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "X"
     .port_info 1 /INPUT 1 "SLEEP"
     .port_info 2 /INPUT 1 "A"
-L_0x563fb979a4f0 .functor NOT 1, L_0x563fb979a200, C4<0>, C4<0>, C4<0>;
-L_0x563fb979a580 .functor AND 1, L_0x563fb979a4f0, L_0x563fb979faa0, C4<1>, C4<1>;
-L_0x563fb979dc90 .functor BUF 1, L_0x563fb979a580, C4<0>, C4<0>, C4<0>;
-v0x563fb98c23c0_0 .net "A", 0 0, L_0x563fb979faa0;  alias, 1 drivers
-v0x563fb98c24b0_0 .net "SLEEP", 0 0, L_0x563fb979a200;  alias, 1 drivers
-v0x563fb98c25c0_0 .net "X", 0 0, L_0x563fb979dc90;  alias, 1 drivers
-v0x563fb98c2660_0 .net "and0_out_X", 0 0, L_0x563fb979a580;  1 drivers
-v0x563fb98c2700_0 .net "not0_out", 0 0, L_0x563fb979a4f0;  1 drivers
-S_0x563fb9795590 .scope module, "_07_" "sky130_fd_sc_hd__xnor2_1" 3 36, 4 99084 1, S_0x563fb9af8120;
+L_0x563214be24f0 .functor NOT 1, L_0x563214be2200, C4<0>, C4<0>, C4<0>;
+L_0x563214be2580 .functor AND 1, L_0x563214be24f0, L_0x563214be7aa0, C4<1>, C4<1>;
+L_0x563214be5c90 .functor BUF 1, L_0x563214be2580, C4<0>, C4<0>, C4<0>;
+v0x563214d0a3c0_0 .net "A", 0 0, L_0x563214be7aa0;  alias, 1 drivers
+v0x563214d0a4b0_0 .net "SLEEP", 0 0, L_0x563214be2200;  alias, 1 drivers
+v0x563214d0a5c0_0 .net "X", 0 0, L_0x563214be5c90;  alias, 1 drivers
+v0x563214d0a660_0 .net "and0_out_X", 0 0, L_0x563214be2580;  1 drivers
+v0x563214d0a700_0 .net "not0_out", 0 0, L_0x563214be24f0;  1 drivers
+S_0x563214bdd590 .scope module, "_07_" "sky130_fd_sc_hd__xnor2_1" 3 36, 4 99084 1, S_0x563214f40120;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Y"
     .port_info 1 /INPUT 1 "A"
     .port_info 2 /INPUT 1 "B"
-v0x563fb9793ba0_0 .net "A", 0 0, L_0x563fb99cb580;  1 drivers
-v0x563fb9793c40_0 .net "B", 0 0, L_0x563fb979faa0;  alias, 1 drivers
-L_0x563fb9941280 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb9793ce0_0 .net8 "VGND", 0 0, L_0x563fb9941280;  1 drivers, strength-aware
-L_0x563fb9941320 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb9793d80_0 .net8 "VNB", 0 0, L_0x563fb9941320;  1 drivers, strength-aware
-L_0x563fb99413c0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb97faab0_0 .net8 "VPB", 0 0, L_0x563fb99413c0;  1 drivers, strength-aware
-L_0x563fb9abfbe0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb97fab70_0 .net8 "VPWR", 0 0, L_0x563fb9abfbe0;  1 drivers, strength-aware
-v0x563fb97fac30_0 .net "Y", 0 0, L_0x563fb979de80;  1 drivers
-S_0x563fb9796db0 .scope module, "base" "sky130_fd_sc_hd__xnor2" 4 99100, 4 99333 1, S_0x563fb9795590;
+v0x563214bdbba0_0 .net "A", 0 0, L_0x563214e13580;  1 drivers
+v0x563214bdbc40_0 .net "B", 0 0, L_0x563214be7aa0;  alias, 1 drivers
+L_0x563214d89280 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214bdbce0_0 .net8 "VGND", 0 0, L_0x563214d89280;  1 drivers, strength-aware
+L_0x563214d89320 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214bdbd80_0 .net8 "VNB", 0 0, L_0x563214d89320;  1 drivers, strength-aware
+L_0x563214d893c0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214c42ab0_0 .net8 "VPB", 0 0, L_0x563214d893c0;  1 drivers, strength-aware
+L_0x563214f07be0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214c42b70_0 .net8 "VPWR", 0 0, L_0x563214f07be0;  1 drivers, strength-aware
+v0x563214c42c30_0 .net "Y", 0 0, L_0x563214be5e80;  1 drivers
+S_0x563214bdedb0 .scope module, "base" "sky130_fd_sc_hd__xnor2" 4 99100, 4 99333 1, S_0x563214bdd590;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Y"
     .port_info 1 /INPUT 1 "A"
     .port_info 2 /INPUT 1 "B"
-L_0x563fb979dda0 .functor XNOR 1, L_0x563fb99cb580, L_0x563fb979faa0, C4<0>, C4<0>;
-L_0x563fb979de80 .functor BUF 1, L_0x563fb979dda0, C4<0>, C4<0>, C4<0>;
-v0x563fb9797010_0 .net "A", 0 0, L_0x563fb99cb580;  alias, 1 drivers
-v0x563fb97970f0_0 .net "B", 0 0, L_0x563fb979faa0;  alias, 1 drivers
-v0x563fb9793a00_0 .net "Y", 0 0, L_0x563fb979de80;  alias, 1 drivers
-v0x563fb9793aa0_0 .net "xnor0_out_Y", 0 0, L_0x563fb979dda0;  1 drivers
-S_0x563fb97fad30 .scope module, "_08_" "sky130_fd_sc_hd__dfrtp_1" 3 41, 4 27830 1, S_0x563fb9af8120;
+L_0x563214be5da0 .functor XNOR 1, L_0x563214e13580, L_0x563214be7aa0, C4<0>, C4<0>;
+L_0x563214be5e80 .functor BUF 1, L_0x563214be5da0, C4<0>, C4<0>, C4<0>;
+v0x563214bdf010_0 .net "A", 0 0, L_0x563214e13580;  alias, 1 drivers
+v0x563214bdf0f0_0 .net "B", 0 0, L_0x563214be7aa0;  alias, 1 drivers
+v0x563214bdba00_0 .net "Y", 0 0, L_0x563214be5e80;  alias, 1 drivers
+v0x563214bdbaa0_0 .net "xnor0_out_Y", 0 0, L_0x563214be5da0;  1 drivers
+S_0x563214c42d30 .scope module, "_08_" "sky130_fd_sc_hd__dfrtp_1" 3 41, 4 27830 1, S_0x563214f40120;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Q"
     .port_info 1 /INPUT 1 "CLK"
     .port_info 2 /INPUT 1 "D"
     .port_info 3 /INPUT 1 "RESET_B"
-v0x563fb97f5d20_0 .net "CLK", 0 0, o0x7ff20477f038;  alias, 0 drivers
-v0x563fb97f5de0_0 .net "D", 0 0, L_0x563fb99cdbd0;  1 drivers
-v0x563fb97f5eb0_0 .net "Q", 0 0, L_0x563fb99cb770;  1 drivers
-v0x563fb97f5fb0_0 .net "RESET_B", 0 0, o0x7ff20477f0f8;  alias, 0 drivers
-L_0x563fb9abfc80 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb97f6080_0 .net8 "VGND", 0 0, L_0x563fb9abfc80;  1 drivers, strength-aware
-L_0x563fb9abfd20 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb9a8b9e0_0 .net8 "VNB", 0 0, L_0x563fb9abfd20;  1 drivers, strength-aware
-L_0x563fb9abfdc0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb9a8ba80_0 .net8 "VPB", 0 0, L_0x563fb9abfdc0;  1 drivers, strength-aware
-L_0x563fb9abfe60 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb9a8bb20_0 .net8 "VPWR", 0 0, L_0x563fb9abfe60;  1 drivers, strength-aware
-S_0x563fb97f76f0 .scope module, "base" "sky130_fd_sc_hd__dfrtp" 4 27848, 4 28090 1, S_0x563fb97fad30;
+v0x563214c3dd20_0 .net "CLK", 0 0, o0x7f03deb20038;  alias, 0 drivers
+v0x563214c3dde0_0 .net "D", 0 0, L_0x563214e15bd0;  1 drivers
+v0x563214c3deb0_0 .net "Q", 0 0, L_0x563214e13770;  1 drivers
+v0x563214c3dfb0_0 .net "RESET_B", 0 0, o0x7f03deb200f8;  alias, 0 drivers
+L_0x563214f07c80 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214c3e080_0 .net8 "VGND", 0 0, L_0x563214f07c80;  1 drivers, strength-aware
+L_0x563214f07d20 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214ed39e0_0 .net8 "VNB", 0 0, L_0x563214f07d20;  1 drivers, strength-aware
+L_0x563214f07dc0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214ed3a80_0 .net8 "VPB", 0 0, L_0x563214f07dc0;  1 drivers, strength-aware
+L_0x563214f07e60 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214ed3b20_0 .net8 "VPWR", 0 0, L_0x563214f07e60;  1 drivers, strength-aware
+S_0x563214c3f6f0 .scope module, "base" "sky130_fd_sc_hd__dfrtp" 4 27848, 4 28090 1, S_0x563214c42d30;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Q"
     .port_info 1 /INPUT 1 "CLK"
     .port_info 2 /INPUT 1 "D"
     .port_info 3 /INPUT 1 "RESET_B"
-L_0x563fb99cb620 .functor NOT 1, o0x7ff20477f0f8, C4<0>, C4<0>, C4<0>;
+L_0x563214e13620 .functor NOT 1, o0x7f03deb200f8, C4<0>, C4<0>, C4<0>;
 UDP_sky130_fd_sc_hd__udp_dff$PR .udp/sequ "sky130_fd_sc_hd__udp_dff$PR", 3, 2
  ,"?*b0-"
  ,"??_0-"
@@ -260,117 +260,117 @@ UDP_sky130_fd_sc_hd__udp_dff$PR .udp/sequ "sky130_fd_sc_hd__udp_dff$PR", 3, 2
  ,"00x?0"
  ,"11x01"
  ,"0?b%0";
-L_0x563fb99cb690 .udp UDP_sky130_fd_sc_hd__udp_dff$PR, L_0x563fb99cdbd0, o0x7ff20477f038, L_0x563fb99cb620;
-L_0x563fb99cb770 .functor BUF 1, L_0x563fb99cb690, C4<0>, C4<0>, C4<0>;
-v0x563fb97f7960_0 .net "CLK", 0 0, o0x7ff20477f038;  alias, 0 drivers
-v0x563fb97f7a20_0 .net "D", 0 0, L_0x563fb99cdbd0;  alias, 1 drivers
-v0x563fb97f90d0_0 .net "Q", 0 0, L_0x563fb99cb770;  alias, 1 drivers
-v0x563fb97f9170_0 .net "RESET", 0 0, L_0x563fb99cb620;  1 drivers
-v0x563fb97f9230_0 .net "RESET_B", 0 0, o0x7ff20477f0f8;  alias, 0 drivers
-v0x563fb97f9340_0 .net "buf_Q", 0 0, L_0x563fb99cb690;  1 drivers
-S_0x563fb9a8bc00 .scope module, "_09_" "sky130_fd_sc_hd__dfrtp_1" 3 47, 4 27830 1, S_0x563fb9af8120;
+L_0x563214e13690 .udp UDP_sky130_fd_sc_hd__udp_dff$PR, L_0x563214e15bd0, o0x7f03deb20038, L_0x563214e13620;
+L_0x563214e13770 .functor BUF 1, L_0x563214e13690, C4<0>, C4<0>, C4<0>;
+v0x563214c3f960_0 .net "CLK", 0 0, o0x7f03deb20038;  alias, 0 drivers
+v0x563214c3fa20_0 .net "D", 0 0, L_0x563214e15bd0;  alias, 1 drivers
+v0x563214c410d0_0 .net "Q", 0 0, L_0x563214e13770;  alias, 1 drivers
+v0x563214c41170_0 .net "RESET", 0 0, L_0x563214e13620;  1 drivers
+v0x563214c41230_0 .net "RESET_B", 0 0, o0x7f03deb200f8;  alias, 0 drivers
+v0x563214c41340_0 .net "buf_Q", 0 0, L_0x563214e13690;  1 drivers
+S_0x563214ed3c00 .scope module, "_09_" "sky130_fd_sc_hd__dfrtp_1" 3 47, 4 27830 1, S_0x563214f40120;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Q"
     .port_info 1 /INPUT 1 "CLK"
     .port_info 2 /INPUT 1 "D"
     .port_info 3 /INPUT 1 "RESET_B"
-v0x563fb9a8d120_0 .net "CLK", 0 0, o0x7ff20477f038;  alias, 0 drivers
-v0x563fb9a8d1e0_0 .net "D", 0 0, L_0x563fb9a8e820;  1 drivers
-v0x563fb9a8d2a0_0 .net "Q", 0 0, L_0x563fb99cded0;  1 drivers
-v0x563fb9a8d370_0 .net "RESET_B", 0 0, o0x7ff20477f0f8;  alias, 0 drivers
-L_0x563fb9abff30 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb9a8d410_0 .net8 "VGND", 0 0, L_0x563fb9abff30;  1 drivers, strength-aware
-L_0x563fb9ac38c0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb97eb420_0 .net8 "VNB", 0 0, L_0x563fb9ac38c0;  1 drivers, strength-aware
-L_0x563fb9ac3930 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb97eb4c0_0 .net8 "VPB", 0 0, L_0x563fb9ac3930;  1 drivers, strength-aware
-L_0x563fb9ac39d0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb97eb560_0 .net8 "VPWR", 0 0, L_0x563fb9ac39d0;  1 drivers, strength-aware
-S_0x563fb9a88bf0 .scope module, "base" "sky130_fd_sc_hd__dfrtp" 4 27848, 4 28090 1, S_0x563fb9a8bc00;
+v0x563214ed5120_0 .net "CLK", 0 0, o0x7f03deb20038;  alias, 0 drivers
+v0x563214ed51e0_0 .net "D", 0 0, L_0x563214ed6820;  1 drivers
+v0x563214ed52a0_0 .net "Q", 0 0, L_0x563214e15ed0;  1 drivers
+v0x563214ed5370_0 .net "RESET_B", 0 0, o0x7f03deb200f8;  alias, 0 drivers
+L_0x563214f07f30 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214ed5410_0 .net8 "VGND", 0 0, L_0x563214f07f30;  1 drivers, strength-aware
+L_0x563214f0b8c0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214c33420_0 .net8 "VNB", 0 0, L_0x563214f0b8c0;  1 drivers, strength-aware
+L_0x563214f0b930 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214c334c0_0 .net8 "VPB", 0 0, L_0x563214f0b930;  1 drivers, strength-aware
+L_0x563214f0b9d0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214c33560_0 .net8 "VPWR", 0 0, L_0x563214f0b9d0;  1 drivers, strength-aware
+S_0x563214ed0bf0 .scope module, "base" "sky130_fd_sc_hd__dfrtp" 4 27848, 4 28090 1, S_0x563214ed3c00;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Q"
     .port_info 1 /INPUT 1 "CLK"
     .port_info 2 /INPUT 1 "D"
     .port_info 3 /INPUT 1 "RESET_B"
-L_0x563fb99cdd30 .functor NOT 1, o0x7ff20477f0f8, C4<0>, C4<0>, C4<0>;
-L_0x563fb99cddc0 .udp UDP_sky130_fd_sc_hd__udp_dff$PR, L_0x563fb9a8e820, o0x7ff20477f038, L_0x563fb99cdd30;
-L_0x563fb99cded0 .functor BUF 1, L_0x563fb99cddc0, C4<0>, C4<0>, C4<0>;
-v0x563fb9a88e80_0 .net "CLK", 0 0, o0x7ff20477f038;  alias, 0 drivers
-v0x563fb9a8a2e0_0 .net "D", 0 0, L_0x563fb9a8e820;  alias, 1 drivers
-v0x563fb9a8a3a0_0 .net "Q", 0 0, L_0x563fb99cded0;  alias, 1 drivers
-v0x563fb9a8a440_0 .net "RESET", 0 0, L_0x563fb99cdd30;  1 drivers
-v0x563fb9a8a500_0 .net "RESET_B", 0 0, o0x7ff20477f0f8;  alias, 0 drivers
-v0x563fb9a8a640_0 .net "buf_Q", 0 0, L_0x563fb99cddc0;  1 drivers
-S_0x563fb97eb680 .scope module, "_10_" "sky130_fd_sc_hd__dfrtp_1" 3 53, 4 27830 1, S_0x563fb9af8120;
+L_0x563214e15d30 .functor NOT 1, o0x7f03deb200f8, C4<0>, C4<0>, C4<0>;
+L_0x563214e15dc0 .udp UDP_sky130_fd_sc_hd__udp_dff$PR, L_0x563214ed6820, o0x7f03deb20038, L_0x563214e15d30;
+L_0x563214e15ed0 .functor BUF 1, L_0x563214e15dc0, C4<0>, C4<0>, C4<0>;
+v0x563214ed0e80_0 .net "CLK", 0 0, o0x7f03deb20038;  alias, 0 drivers
+v0x563214ed22e0_0 .net "D", 0 0, L_0x563214ed6820;  alias, 1 drivers
+v0x563214ed23a0_0 .net "Q", 0 0, L_0x563214e15ed0;  alias, 1 drivers
+v0x563214ed2440_0 .net "RESET", 0 0, L_0x563214e15d30;  1 drivers
+v0x563214ed2500_0 .net "RESET_B", 0 0, o0x7f03deb200f8;  alias, 0 drivers
+v0x563214ed2640_0 .net "buf_Q", 0 0, L_0x563214e15dc0;  1 drivers
+S_0x563214c33680 .scope module, "_10_" "sky130_fd_sc_hd__dfrtp_1" 3 53, 4 27830 1, S_0x563214f40120;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Q"
     .port_info 1 /INPUT 1 "CLK"
     .port_info 2 /INPUT 1 "D"
     .port_info 3 /INPUT 1 "RESET_B"
-v0x563fb97ee970_0 .net "CLK", 0 0, o0x7ff20477f038;  alias, 0 drivers
-v0x563fb97e8610_0 .net "D", 0 0, L_0x563fb9a8eb70;  1 drivers
-v0x563fb97e86b0_0 .net "Q", 0 0, L_0x563fb9a8ea60;  1 drivers
-v0x563fb97e87b0_0 .net "RESET_B", 0 0, o0x7ff20477f0f8;  alias, 0 drivers
-L_0x563fb9ac3aa0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb97e8850_0 .net8 "VGND", 0 0, L_0x563fb9ac3aa0;  1 drivers, strength-aware
-L_0x563fb9ac3b40 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb97e88f0_0 .net8 "VNB", 0 0, L_0x563fb9ac3b40;  1 drivers, strength-aware
-L_0x563fb9ac3be0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb97e8990_0 .net8 "VPB", 0 0, L_0x563fb9ac3be0;  1 drivers, strength-aware
-L_0x563fb9ac5590 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb97e9d20_0 .net8 "VPWR", 0 0, L_0x563fb9ac5590;  1 drivers, strength-aware
-S_0x563fb97ecf00 .scope module, "base" "sky130_fd_sc_hd__dfrtp" 4 27848, 4 28090 1, S_0x563fb97eb680;
+v0x563214c36970_0 .net "CLK", 0 0, o0x7f03deb20038;  alias, 0 drivers
+v0x563214c30610_0 .net "D", 0 0, L_0x563214ed6b70;  1 drivers
+v0x563214c306b0_0 .net "Q", 0 0, L_0x563214ed6a60;  1 drivers
+v0x563214c307b0_0 .net "RESET_B", 0 0, o0x7f03deb200f8;  alias, 0 drivers
+L_0x563214f0baa0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214c30850_0 .net8 "VGND", 0 0, L_0x563214f0baa0;  1 drivers, strength-aware
+L_0x563214f0bb40 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214c308f0_0 .net8 "VNB", 0 0, L_0x563214f0bb40;  1 drivers, strength-aware
+L_0x563214f0bbe0 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214c30990_0 .net8 "VPB", 0 0, L_0x563214f0bbe0;  1 drivers, strength-aware
+L_0x563214f0d590 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214c31d20_0 .net8 "VPWR", 0 0, L_0x563214f0d590;  1 drivers, strength-aware
+S_0x563214c34f00 .scope module, "base" "sky130_fd_sc_hd__dfrtp" 4 27848, 4 28090 1, S_0x563214c33680;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Q"
     .port_info 1 /INPUT 1 "CLK"
     .port_info 2 /INPUT 1 "D"
     .port_info 3 /INPUT 1 "RESET_B"
-L_0x563fb9a8e8c0 .functor NOT 1, o0x7ff20477f0f8, C4<0>, C4<0>, C4<0>;
-L_0x563fb9a8e950 .udp UDP_sky130_fd_sc_hd__udp_dff$PR, L_0x563fb9a8eb70, o0x7ff20477f038, L_0x563fb9a8e8c0;
-L_0x563fb9a8ea60 .functor BUF 1, L_0x563fb9a8e950, C4<0>, C4<0>, C4<0>;
-v0x563fb97ed140_0 .net "CLK", 0 0, o0x7ff20477f038;  alias, 0 drivers
-v0x563fb97ed200_0 .net "D", 0 0, L_0x563fb9a8eb70;  alias, 1 drivers
-v0x563fb97ee600_0 .net "Q", 0 0, L_0x563fb9a8ea60;  alias, 1 drivers
-v0x563fb97ee6d0_0 .net "RESET", 0 0, L_0x563fb9a8e8c0;  1 drivers
-v0x563fb97ee790_0 .net "RESET_B", 0 0, o0x7ff20477f0f8;  alias, 0 drivers
-v0x563fb97ee830_0 .net "buf_Q", 0 0, L_0x563fb9a8e950;  1 drivers
-S_0x563fb97e9e40 .scope module, "_11_" "sky130_fd_sc_hd__dfrtp_1" 3 59, 4 27830 1, S_0x563fb9af8120;
+L_0x563214ed68c0 .functor NOT 1, o0x7f03deb200f8, C4<0>, C4<0>, C4<0>;
+L_0x563214ed6950 .udp UDP_sky130_fd_sc_hd__udp_dff$PR, L_0x563214ed6b70, o0x7f03deb20038, L_0x563214ed68c0;
+L_0x563214ed6a60 .functor BUF 1, L_0x563214ed6950, C4<0>, C4<0>, C4<0>;
+v0x563214c35140_0 .net "CLK", 0 0, o0x7f03deb20038;  alias, 0 drivers
+v0x563214c35200_0 .net "D", 0 0, L_0x563214ed6b70;  alias, 1 drivers
+v0x563214c36600_0 .net "Q", 0 0, L_0x563214ed6a60;  alias, 1 drivers
+v0x563214c366d0_0 .net "RESET", 0 0, L_0x563214ed68c0;  1 drivers
+v0x563214c36790_0 .net "RESET_B", 0 0, o0x7f03deb200f8;  alias, 0 drivers
+v0x563214c36830_0 .net "buf_Q", 0 0, L_0x563214ed6950;  1 drivers
+S_0x563214c31e40 .scope module, "_11_" "sky130_fd_sc_hd__dfrtp_1" 3 59, 4 27830 1, S_0x563214f40120;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Q"
     .port_info 1 /INPUT 1 "CLK"
     .port_info 2 /INPUT 1 "D"
     .port_info 3 /INPUT 1 "RESET_B"
-v0x563fb9913960_0 .net "CLK", 0 0, o0x7ff20477f038;  alias, 0 drivers
-v0x563fb9910870_0 .net "D", 0 0, L_0x563fb9a921d0;  1 drivers
-v0x563fb9910930_0 .net "Q", 0 0, L_0x563fb9a92020;  1 drivers
-v0x563fb9910a30_0 .net "RESET_B", 0 0, o0x7ff20477f0f8;  alias, 0 drivers
-L_0x563fb9ac5630 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb9910ad0_0 .net8 "VGND", 0 0, L_0x563fb9ac5630;  1 drivers, strength-aware
-L_0x563fb9ac56d0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
-v0x563fb9910bc0_0 .net8 "VNB", 0 0, L_0x563fb9ac56d0;  1 drivers, strength-aware
-L_0x563fb9ac5790 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb9914d60_0 .net8 "VPB", 0 0, L_0x563fb9ac5790;  1 drivers, strength-aware
-L_0x563fb9ac5830 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
-v0x563fb9914e00_0 .net8 "VPWR", 0 0, L_0x563fb9ac5830;  1 drivers, strength-aware
-S_0x563fb9911f20 .scope module, "base" "sky130_fd_sc_hd__dfrtp" 4 27848, 4 28090 1, S_0x563fb97e9e40;
+v0x563214d5b960_0 .net "CLK", 0 0, o0x7f03deb20038;  alias, 0 drivers
+v0x563214d58870_0 .net "D", 0 0, L_0x563214eda1d0;  1 drivers
+v0x563214d58930_0 .net "Q", 0 0, L_0x563214eda020;  1 drivers
+v0x563214d58a30_0 .net "RESET_B", 0 0, o0x7f03deb200f8;  alias, 0 drivers
+L_0x563214f0d630 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214d58ad0_0 .net8 "VGND", 0 0, L_0x563214f0d630;  1 drivers, strength-aware
+L_0x563214f0d6d0 .functor BUFT 1, C8<770>, C4<0>, C4<0>, C4<0>;
+v0x563214d58bc0_0 .net8 "VNB", 0 0, L_0x563214f0d6d0;  1 drivers, strength-aware
+L_0x563214f0d790 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214d5cd60_0 .net8 "VPB", 0 0, L_0x563214f0d790;  1 drivers, strength-aware
+L_0x563214f0d830 .functor BUFT 1, C8<771>, C4<0>, C4<0>, C4<0>;
+v0x563214d5ce00_0 .net8 "VPWR", 0 0, L_0x563214f0d830;  1 drivers, strength-aware
+S_0x563214d59f20 .scope module, "base" "sky130_fd_sc_hd__dfrtp" 4 27848, 4 28090 1, S_0x563214c31e40;
  .timescale -9 -12;
     .port_info 0 /OUTPUT 1 "Q"
     .port_info 1 /INPUT 1 "CLK"
     .port_info 2 /INPUT 1 "D"
     .port_info 3 /INPUT 1 "RESET_B"
-L_0x563fb99cdcc0 .functor NOT 1, o0x7ff20477f0f8, C4<0>, C4<0>, C4<0>;
-L_0x563fb9a91f60 .udp UDP_sky130_fd_sc_hd__udp_dff$PR, L_0x563fb9a921d0, o0x7ff20477f038, L_0x563fb99cdcc0;
-L_0x563fb9a92020 .functor BUF 1, L_0x563fb9a91f60, C4<0>, C4<0>, C4<0>;
-v0x563fb99121b0_0 .net "CLK", 0 0, o0x7ff20477f038;  alias, 0 drivers
-v0x563fb9912270_0 .net "D", 0 0, L_0x563fb9a921d0;  alias, 1 drivers
-v0x563fb97ea080_0 .net "Q", 0 0, L_0x563fb9a92020;  alias, 1 drivers
-v0x563fb9913670_0 .net "RESET", 0 0, L_0x563fb99cdcc0;  1 drivers
-v0x563fb9913730_0 .net "RESET_B", 0 0, o0x7ff20477f0f8;  alias, 0 drivers
-v0x563fb9913820_0 .net "buf_Q", 0 0, L_0x563fb9a91f60;  1 drivers
-    .scope S_0x563fb9af21f0;
+L_0x563214e15cc0 .functor NOT 1, o0x7f03deb200f8, C4<0>, C4<0>, C4<0>;
+L_0x563214ed9f60 .udp UDP_sky130_fd_sc_hd__udp_dff$PR, L_0x563214eda1d0, o0x7f03deb20038, L_0x563214e15cc0;
+L_0x563214eda020 .functor BUF 1, L_0x563214ed9f60, C4<0>, C4<0>, C4<0>;
+v0x563214d5a1b0_0 .net "CLK", 0 0, o0x7f03deb20038;  alias, 0 drivers
+v0x563214d5a270_0 .net "D", 0 0, L_0x563214eda1d0;  alias, 1 drivers
+v0x563214c32080_0 .net "Q", 0 0, L_0x563214eda020;  alias, 1 drivers
+v0x563214d5b670_0 .net "RESET", 0 0, L_0x563214e15cc0;  1 drivers
+v0x563214d5b730_0 .net "RESET_B", 0 0, o0x7f03deb200f8;  alias, 0 drivers
+v0x563214d5b820_0 .net "buf_Q", 0 0, L_0x563214ed9f60;  1 drivers
+    .scope S_0x563214f3a1f0;
 T_0 ;
     %vpi_call/w 2 7 "$dumpfile", "sim.vcd" {0 0 0};
-    %vpi_call/w 2 8 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x563fb9af21f0 {0 0 0};
+    %vpi_call/w 2 8 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x563214f3a1f0 {0 0 0};
     %delay 1000, 0;
     %end;
     .thread T_0;
