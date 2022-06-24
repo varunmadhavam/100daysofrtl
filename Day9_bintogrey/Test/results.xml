@@ -1,0 +1,6 @@
+<testsuites name="results">
+  <testsuite name="all" package="all">
+    <property name="random_seed" value="1656044831" />
+    <testcase name="runTest" classname="test" file="/home/varun/coding/projects/100daysofrtl/Day9_bintogrey/Test/test.py" lineno="9" time="0.001051187515258789" sim_time_ns="100.001" ratio_time="95131.45708868225" />
+  </testsuite>
+</testsuites>

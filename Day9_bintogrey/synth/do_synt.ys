@@ -1,0 +1,11 @@
+read_verilog ../src/*.v ../top.v
+read_liberty -lib ../../yosys_sky130/lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+synth -top top
+dfflibmap -liberty ../../yosys_sky130/lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty ../../yosys_sky130/lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+clean
+write_verilog -noattr synth.v
+flatten
+write_verilog -noattr flatten_synth.v
+write_spice synth.sp
+show
