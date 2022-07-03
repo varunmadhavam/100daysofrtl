@@ -1,0 +1,29 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Sun Jul  3 16:14:21 2022
+[*]
+[dumpfile] "/home/varun/coding/projects/100daysofrtl/Day11_PISO/Test/sim.vcd"
+[dumpfile_mtime] "Sun Jul  3 16:13:27 2022"
+[dumpfile_size] 3837
+[savefile] "/home/varun/coding/projects/100daysofrtl/Day11_PISO/Test/wave.gtkw"
+[timestart] 0
+[size] 1920 1021
+[pos] -51 -51
+*-17.052757 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 233
+[signals_width] 94
+[sst_expanded] 1
+[sst_vpaned_height] 293
+@28
+sim.clk
+@22
+sim.p_i[7:0]
+@28
+sim.ready_i
+sim.ready_o
+sim.rst_n
+sim.s_o
+sim.valid_i
+sim.valid_o
+[pattern_trace] 1
+[pattern_trace] 0
